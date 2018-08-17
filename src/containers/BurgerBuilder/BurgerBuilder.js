@@ -34,7 +34,7 @@ class BurgerBuilder extends Component {
       .get('https://burger-react-cho.firebaseio.com/ingredients.json')
       .then(response => {
         this.setState({ ingredients: response.data });
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch(error => {
         this.setState({ error: true });
